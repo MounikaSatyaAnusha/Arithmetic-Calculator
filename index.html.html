@@ -1,0 +1,65 @@
+<!DOCTYPE html >
+<html>
+    <head>
+        <title>Arithmetic calculator </title>
+    </head>
+    <style>
+        body {
+            position: relative;
+ background-image: url("https://i.ibb.co/vPzTsFv/calci.jpg"   );
+ background-size:100% ;
+ background-repeat: no-repeat;
+}
+        .sty{
+            width: 520px;
+            height: 300PX;
+          
+    position: fixed;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 30px;
+    border: 1px solid black;
+        }
+        .btn{
+        display: block;
+        width: 100px;
+        padding: 10px;
+        border: none;color: black;text-align: center;
+        text-decoration: none;
+        cursor: pointer;border-radius: 3px;
+        background-color: burlywood;
+        display: block;
+        margin: auto;
+        margin-top: 30px;
+    }
+    #results {
+        margin-bottom: 10px;
+            font-size: 20px; 
+            text-align: center;
+        }
+    </style>
+    <body>
+        <div class="sty"> 
+        <h1 style="text-align: center;">Calculator</h1>
+        <label for style="font-size: 20px;margin-left: 20px;">Enter First Number:</label>
+        <input type="number" name="first" id="first"><br>
+        <first id="first"></first><br>
+
+        <label for style="font-size: 20px; margin-left: 20px;">Enter second number: </label>
+        <input type="number" name="second" id="second"><br>
+        <width id="second"></second><br>
+       <label for ="operator" style="font-size: 20px;margin-left: 20px;">Select the operation:</label>
+       <select id="op" name="op">
+        <option value="select">Select</option>
+       <option value="+">Addition(+)</option>
+       <option value="-">Subraction(-)</option>
+       <option value="*">Muiltiplication(*)</option>
+       <option value="/">Division(/)</option>
+    </select>
+            <button  class="btn" onclick="calculator()">Calculate</button>
+            <p id="results"></p>
+    </div>
+    </body>
+    <script src="arithmeticjs.js"></script> 
+</html>
